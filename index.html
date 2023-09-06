@@ -3,130 +3,147 @@
 <link>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel = "styleSheet" href="style.css"></link>
     <title>Webathon</title>
 </head>
 <body>
+<div id="wrapper">
     <div class="container" id="container">
-   
-        <div class="navbar">
-            
-            <ul>
-                <li><h2 class="heading">VR-THON</h2></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#registration">Register</a></li>
-
-            </ul>
-        </div>
-        <!-- <div class="animated_image">
-            <img src="image.png" class= "img_box" alt="VR image">
-            <h2 class="classy_text">From lines of code<br> to <br>immersive worlds</h2>
-        </div> -->
-        <div class = "meta">
-           
-            <!-- <h2 class="classy_text">From lines of code to immersive worlds</h2> -->
-        </div>
-    </div>
-<!-- events section -->
-    <div class="Events" id = "events">
-        <div class="box">
-            <div style="--v: 1;" id="event1" class="event1"><img src="img1.png" alt="img 1"></div>
-            <div style="--v: 2;" id="event2" class="event1"><img src="img1.png" alt="img 1"></div>
-            <div style="--v: 3;" id="event3" class="event1"><img src="img1.png" alt="img 1"></div>
-            <div style="--v: 4;" id="event4" class="event1"><img src="img1.png" alt="img 1"></div>
-            <div style="--v: 5;" id="event5" class="event1"><img src="img1.png" alt="img 1"></div>
-        </div>
-        <div class="description">
-            <h2 id="desc">description</h2>
-        </div>
-    </div>
-
-    <!-- register section -->
-    <div class="rows">
-    <div class="register">
-        <form id="registration">
-            <label for="team-name">Enter Team Name:</label>
-            <input type="text" placeholder="example-team"><br>
-            <label for="name1">Team member 1 Name:</label>
-            <input type="text" placeholder="Lilly"><br>
-            <label for="team-name">Team member 1 department:</label>
-            <input type="text" placeholder="CSE"><br>
-            <label for="team-name">Team member 1 mail</label>
-            <input type="mail" placeholder="example.com"><br>
-            <label for="team-name">Team member 1 register Number:</label>
-            <input type="text" placeholder="21c136"><br>
-            <label for="team-name">Team member 1 phone no:</label>
-            <input type="number" placeholder="9876543210"><br>
-            <!--  -->
-
-            <label for="name1">Team member 2 Name:</label>
-            <input type="text" placeholder="Lilly"><br>
-            <label for="team-name">Team member 2 department:</label>
-            <input type="text" placeholder="CSE"><br>
-            <label for="team-name">Team member 2 mail</label>
-            <input type="mail" placeholder="example.com"><br>
-            <label for="team-name">Team member 2 register Number:</label>
-            <input type="text" placeholder="21c136"><br>
-            <label for="team-name">Team member 2 phone no:</label>
-            <input type="number" placeholder="9876543210"><br>
-
-            <!--    -->
-            <label for="name1">Team member 3 Name:</label>
-            <input type="text" placeholder="Lilly"><br>
-            <label for="team-name">Team member 3 department:</label>
-            <input type="text" placeholder="CSE"><br>
-            <label for="team-name">Team member 3 mail</label>
-            <input type="mail" placeholder="example.com"><br>
-            <label for="team-name">Team member 3 register Number:</label>
-            <input type="text" placeholder="21c136"><br>
-            <label for="team-name">Team member 3 phone no:</label>
-            <input type="number" placeholder="9876543210"><br>
-            <label for="team-name"></label>
-            <input type="submit" value="submit" class="submit">
-            <br>
-        </form>
-        </div>
-        <div class="inspiring-words" ><h3 class="login-words" data-text="Register Today to get into Virtual world...">Register Today to get into Virtual world...</h3></div>
-    </div>
-    </div>
-<!-- about section -->
-        <div class="about" id="about">
-            <h1 class="title">About Us</h1>
-            <div class="about-content">
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1693035647252-8ee896fb754a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" alt="image" width="50px" height="300px">
-                </div>
-                <div class="content">
-                    <p>
-                        We are welcoming you to this wonderful event conducted by us: 
-                        for queries contact us.
-                    </p>
-                    <a href="" class="read-more">Read More</a>
-                </div>
-                
-            </div>
-            <div class="contact">
-                
-                     <h3 class="item">📞: 9876543210</h3>
-                     <a href="#" class="item"><img src="https://cdn-icons-png.flaticon.com/512/3621/3621435.png" alt="instagram" width="30px" height="30px"></a>
-                     <a href="#" class="item"><img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="twitter" width="30px" height="30px"></a>
-                     <a href="mailto:example@gmail.com" class="item" id="mail">Mail Us</a>
-                
-            </div>
-        </div>
-
     
+            <div class="navbar">
+                <div class="logo"><a href="#">VR-THON</a></div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#">Event-details</a></li>
+                    <li><a href="#registration">Register</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+                <div class="dropdown_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#">Event-details</a></li>
+                    <li><a href="#registration">Register</a></li>
+                    <li><a href="#about">About</a></li>
+                </div>
+            
+        </div>
+    <!-- events section -->
+        <div class="Events" id = "events">
+            <div class="box">
+                <div style="--v: 1;" id="event1" class="event1"><img src="img1.png" alt="img 1"></div>
+                <div style="--v: 2;" id="event2" class="event1"><img src="img1.png" alt="img 1"></div>
+                <div style="--v: 3;" id="event3" class="event1"><img src="img1.png" alt="img 1"></div>
+                <div style="--v: 4;" id="event4" class="event1"><img src="img1.png" alt="img 1"></div>
+                <div style="--v: 5;" id="event5" class="event1"><img src="img1.png" alt="img 1"></div>
+            </div>
+            <div class="description">
+                <h2 id="desc">description</h2>
+            </div>
+        </div>
+
+        <!-- register section -->
+        <div class="rows">
+
+        <div class="register">
+            <form id="registration">
+                <label for="team-name">Enter Team Name:</label>
+                <input type="text" placeholder="example-team"><br>
+                <label for="name1">Team member 1 Name:</label>
+                <input type="text" placeholder="Lilly"><br>
+                <label for="team-name">Team member 1 department:</label>
+                <input type="text" placeholder="CSE"><br>
+                <label for="team-name">Team member 1 mail</label>
+                <input type="mail" placeholder="example.com"><br>
+                <label for="team-name">Team member 1 register Number:</label>
+                <input type="text" placeholder="21c136"><br>
+                <label for="team-name">Team member 1 phone no:</label>
+                <input type="number" placeholder="9876543210"><br>
+                <!--  -->
+
+                <label for="name1">Team member 2 Name:</label>
+                <input type="text" placeholder="Lilly"><br>
+                <label for="team-name">Team member 2 department:</label>
+                <input type="text" placeholder="CSE"><br>
+                <label for="team-name">Team member 2 mail</label>
+                <input type="mail" placeholder="example.com"><br>
+                <label for="team-name">Team member 2 register Number:</label>
+                <input type="text" placeholder="21c136"><br>
+                <label for="team-name">Team member 2 phone no:</label>
+                <input type="number" placeholder="9876543210"><br>
+
+                <!--    -->
+                <label for="name1">Team member 3 Name:</label>
+                <input type="text" placeholder="Lilly"><br>
+                <label for="team-name">Team member 3 department:</label>
+                <input type="text" placeholder="CSE"><br>
+                <label for="team-name">Team member 3 mail</label>
+                <input type="mail" placeholder="example.com"><br>
+                <label for="team-name">Team member 3 register Number:</label>
+                <input type="text" placeholder="21c136"><br>
+                <label for="team-name">Team member 3 phone no:</label>
+                <input type="number" placeholder="9876543210"><br>
+                <label for="team-name"></label>
+                <input type="submit" value="submit" class="submit">
+                <br>
+            </form>
+            </div>
+        </div>
+    
+    <!-- about section -->
+            <div class="about" id="about">
+                <h1 class="title">About Us</h1>
+                <div class="about-content">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1693035647252-8ee896fb754a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" alt="image" width="50px" height="300px">
+                    </div>
+                    <div class="content">
+                        <p>
+                            We are welcoming you to this wonderful event conducted by us: 
+                            for queries contact us.
+                        </p>
+                        <a href="" class="read-more">Read More</a>
+                    </div>
+                    
+                </div>
+                <div class="contact">
+                    
+                        <h3 class="item">📞: 9876543210</h3>
+                        <a href="#" class="item"><img src="https://cdn-icons-png.flaticon.com/512/3621/3621435.png" alt="instagram" width="30px" height="30px"></a>
+                        <a href="#" class="item"><img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="twitter" width="30px" height="30px"></a>
+                        <a href="mailto:example@gmail.com" class="item" id="mail">Mail Us</a>
+                    
+                </div>
+            </div>
+    </div>
+
 <!--  -->
    
     <script src="script.js"></script>
     <script>
         const bg = document.getElementById('container');
         window.addEventListener('scroll',function(){
-            bg.style.backgroundSize = 140 - +window.pageYOffset/12+'%';
+            bg.style.backgroundSize = 130 - +window.pageYOffset/12+'%';
             bg.style.opacity = 1 - +window.pageYOffset/700+'';
         })
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
     </script>
 </body>
 
